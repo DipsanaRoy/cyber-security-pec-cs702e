@@ -10,15 +10,15 @@ Greetings! Fellow learners. I have created this repository when I was preparing 
 
 ---
 
-## License  
+## License
 
 Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — You're free to use this with attribution, no commercial use.
 
 ---
 
-## 💡 Best viewed in VS Code  
+## 💡 Best viewed in VS Code
 >
-> Download this README and press **Ctrl + Shift + V** (Windows/Linux) or **Cmd + Shift + V** (Mac) to open the Markdown preview.
+> Download this README and press **`Ctrl + Shift + V`** (Windows/Linux) or **`Cmd + Shift + V`** (Mac) to open the Markdown preview.
 
 ---
 
