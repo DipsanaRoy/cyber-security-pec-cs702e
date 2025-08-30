@@ -16,6 +16,12 @@ Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) �
 
 ---
 
+## 💡 Best viewed in VS Code  
+>
+> Download this README and press **Ctrl + Shift + V** (Windows/Linux) or **Cmd + Shift + V** (Mac) to open the Markdown preview.
+
+---
+
 ## ⚠️ Caution
 
 I have noticed MAKAUT asking trolled questions in this examination mostly from Cryptocurrency rather than Cyber Security itself.
