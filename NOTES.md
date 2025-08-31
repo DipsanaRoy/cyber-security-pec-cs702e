@@ -297,42 +297,139 @@ A very common and modern form of phishing where scammers impersonate delivery ag
 
 👉 **Golden Line for Exams:** Encryption ensures confidentiality, while hashing ensures integrity.
 
-## 🔑 Quick Concepts
+## 🔑 Ciphers & Cryptography
 
-### AES (Advanced Encryption Standard)
+Ciphers are the **building blocks** of digital security. Whether it’s WhatsApp chats, banking apps, or your college’s exam portal, they all rely on **encryption algorithms (ciphers + keys)** to keep data safe.
 
-- Symmetric encryption algorithm (same key for encrypt/decrypt).
-- Very secure, used in Wi-Fi security, file encryption, banking.
-- Successor to DES.
+1. **Cipher = Algorithm for secrecy**
+   A cipher is just a **method (algorithm)** used to convert **plain text** (normal readable data) → into **cipher text** (scrambled/unreadable data).
 
-### DES (Data Encryption Standard)
+   - Example: HELLO → IFMMP (Caesar cipher shift by 1).
 
-- Old symmetric algorithm (56-bit key).
-- Now considered insecure (can be brute-forced).
-- Replaced by AES.
+2. **Key = Secret spice 🌶️**
+   The **key** decides *how* the text is scrambled or unscrambled.
 
-### RSA (Rivest-Shamir-Adleman)
+   - Without the right key, the cipher text is almost impossible (or very hard) to read.
+   - Example: Caesar cipher with key=3 → shift every letter by 3.
+3. **Common Terms You’ll See:**
 
-- Asymmetric encryption algorithm (public/private key).
-- Used for secure key exchange, digital signatures.
-- *Ex:* When you log in to your bank, RSA is behind the curtain.
+   - **Plaintext** → original message
+   - **Ciphertext** → encrypted message
+   - **Encryption** → process of converting plaintext → ciphertext
+   - **Decryption** → ciphertext → plaintext
+   - **Key** → secret parameter that controls encryption/decryption
 
-### ECC (Elliptic Curve Cryptography)
+---
 
-- Another asymmetric encryption like RSA but uses elliptic curves → smaller keys with same security.
-- Popular in mobile & IoT because it’s lightweight.
+## Types of Ciphers
 
-### SSL/TLS (Secure Sockets Layer / Transport Layer Security)
+### 1. Substitution Cipher
 
-- Protocols that secure communication over the internet.
-- Provide encryption + authentication.
-- *Example:* When you see 🔒 HTTPS in your browser → TLS is working.
+- **How it works:** Each letter in the plaintext is **replaced** by another letter or symbol.
+- **Example:**
+  - **Plaintext:** HELLO
+  - **Ciphertext:** IFMMP (Each letter shifted by +1, a.k.a. Caesar Cipher with shift=1)
 
-👉 Easy way to connect:
+### 2. Caesar Cipher (A Type of Substitution Cipher)
 
-- **AES/DES** = Symmetric.
-- **RSA/ECC** = Asymmetric.
-- **SSL/TLS** = Protocols using these algorithms to secure communication.
+- **How it works:** Each letter is shifted a fixed number of places down the alphabet.
+- **Example (Shift = 3):**
+  - **Plaintext:** HELLO
+  - **Ciphertext:** KHOOR
+  - *H (+3) = K, E (+3) = H, L (+3) = O, L (+3) = O, O (+3) = R*
+
+### 3. Transposition Cipher
+
+- **How it works:** The letters of the plaintext are **rearranged** (jumbled) in a specific pattern. No letters are changed, just their order.
+- **Example (Rail Fence Cipher, Depth = 2):**
+  - **Plaintext:** ATTACK TODAY
+  - Write in a zig-zag:
+
+    ```text
+    A   T   C   O   A
+      T   A   K   T   D   Y
+    ```
+
+  - **Ciphertext:** "ATCOA TA KTDY" (Read row-wise: Row1: A T C O A, Row2: T A K T D Y)
+
+### 4. Feistel Cipher (Network)
+
+- **How it works:** It's a **structure** (framework) used to build symmetric block ciphers. It splits data into two halves and processes them through multiple rounds of substitution and permutation.
+- **Why important:** Many famous ciphers (like DES) are built using the Feistel network.
+- **Example:** **DES (Data Encryption Standard)** is the most famous example of a Feistel cipher.
+
+---
+
+### **Mnemonic for Classical Ciphers: "SCT"**
+
+- **S**ubstitution → **S**wap letters
+- **C**aesar → **C**hange by shift
+- **T**ransposition → **T**angle order
+
+---
+
+## Types of Modern Ciphers
+
+### 1. AES (Advanced Encryption Standard)
+
+- **Type:** Symmetric (same key for encrypt & decrypt).
+- **Key Sizes:** 128, 192, 256 bits.
+- **Strengths:** Very strong, fast, and secure → standard for modern encryption.
+- **Uses:** Wi-Fi security (WPA2), file encryption, banking apps.
+- **Extra:** Works on blocks of data (128-bit blocks).
+
+---
+
+### 2. DES (Data Encryption Standard)
+
+- **Type:** Symmetric.
+- **Key Size:** 56-bit → small, so brute-force possible.
+- **Status:** Obsolete, replaced by AES.
+- **Uses (Past):** Banking, e-commerce in early days.
+
+---
+
+### 3. RSA (Rivest-Shamir-Adleman)
+
+- **Type:** Asymmetric (uses **public** + **private** key).
+- **Security:** Based on difficulty of factoring large prime numbers.
+- **Uses:**
+
+  - Secure key exchange
+  - Digital signatures
+  - SSL/TLS certificates
+- **Example:** When you log into your bank, RSA often encrypts the session key that later drives AES.
+
+---
+
+### 4. ECC (Elliptic Curve Cryptography)
+
+- **Type:** Asymmetric (like RSA).
+- **Strength:** Same security as RSA but with much smaller keys (faster, lightweight).
+- **Uses:** Mobile devices, IoT, cryptocurrencies.
+- **Example:** Bitcoin uses ECC for signing transactions.
+
+---
+
+### 5. SSL/TLS (Secure Sockets Layer / Transport Layer Security)
+
+- **Type:** Protocols, not ciphers.
+- **Work:** Use AES/RSA/ECC behind the scenes to:
+
+  - Encrypt communication
+  - Authenticate server identity
+
+- **Example:** The 🔒 HTTPS in your browser = TLS working.
+
+---
+
+✅ **Quick Link**
+
+- AES/DES → Symmetric (fast, one key).
+- RSA/ECC → Asymmetric (slow but secure, two keys).
+- SSL/TLS → Protocol that uses these for **secure communication**.
+
+---
 
 ### Mnemonic
 
@@ -343,6 +440,66 @@ Data Encryption Standard,
 Advanced Encryption Standard,
 Rivest-Shamir-Aldeman,
 Elliptic Curve Cryptography.
+
+---
+
+## Full Cipher Summary Table
+
+| Cipher Name         | Type                      | How It Works                                    | Example                              |
+|---------------------|---------------------------|-------------------------------------------------|--------------------------------------|
+| **AES**             | Symmetric Block           | Encrypts blocks with substitution & permutation | Encrypts WiFi traffic (WPA2)         |
+| **DES**             | Symmetric Block (Feistel) | Old standard, 56-bit key                        | Old banking systems                  |
+| **RSA**             | Asymmetric                | Uses public/private keys based on primes        | SSL certificates, digital signatures |
+| **ECC**             | Asymmetric                | Uses elliptic curves for smaller keys           | Bitcoin, mobile encryption           |
+| **Substitution**    | Classical                 | Replaces letters with others                    | A→D, B→E, C→F                        |
+| **Caesar Cipher**   | Substitution Type         | Shifts letters                                  | HELLO → KHOOR (shift=3)              |
+| **Transposition**   | Classical                 | Reorders letters                                | "HELP" → "H P L E" (rail fence)      |
+| **Feistel Network** | Structure (not a cipher)  | Splits & processes data in rounds               | Used in DES, Blowfish                |
+
+---
+
+## 💥 Buffer Overflow
+
+---
+
+### Definition
+
+A **buffer overflow** happens when a program writes **more data than a buffer (temporary memory space) can hold**, causing data to overwrite adjacent memory.
+
+---
+
+### Example
+
+```c
+char name[5];
+strcpy(name, "DipsanaTheGreat");  
+```
+
+Here, `name` can only store 5 chars, but the program tries to store 15.
+👉 This extra data overwrites memory beyond `name`, causing **crash** or even **malicious code execution**.
+
+---
+
+### Why Dangerous?
+
+Hackers exploit buffer overflow to:
+
+- **Inject malicious code** into memory.
+- **Gain unauthorized access**.
+- **Crash programs/OS (Denial of Service)**.
+
+---
+
+### Prevention
+
+- Use safe programming practices (`strncpy` instead of `strcpy`).
+- Compiler protections (Stack canaries, DEP, ASLR).
+- Input validation (never trust user input blindly).
+
+---
+
+✨ Exam one-liner:
+“Buffer overflow is a condition where more data is written to a buffer than it can hold, leading to corruption of adjacent memory and possible execution of malicious code. Prevented by safe coding practices and memory protection mechanisms.”
 
 ---
 
