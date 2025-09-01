@@ -10,73 +10,95 @@ You will notice MAKAUT asking questions that differs from their syllabus but **d
 
 ---
 
-**i. What is the existence of weakness in a system or network known as?**  
-**Answer:** Vulnerability  
+#### *i. What is the existence of weakness in a system or network known as?*
+
+**Answer:** Vulnerability
+
 *Explanation:* A vulnerability is a flaw or weakness that can be exploited by a threat actor.
 
 ---
 
-**ii. Which DDoS in mobile systems waits for the owner to trigger the cyber attack?**  
-**Answer:** Botnets (or Mobile Botnets)  
+#### *ii. Which DDoS in mobile systems waits for the owner to trigger the cyber attack?*
+
+**Answer:** Botnets (or Mobile Botnets)
+
 *Explanation:* Some mobile malware enrolls devices into a botnet. The device remains dormant until activated (via command from the attacker) to participate in a DDoS attack, often without the owner's knowledge.
 
 ---
 
-**iii. Why are factors like Confidentiality, Integrity, Availability, and Authenticity considered as the fundamentals?**  
-**Answer:** They form the core principles (CIA Triad + Authenticity) of information security.  
+#### *iii. Why are factors like Confidentiality, Integrity, Availability, and Authenticity considered as the fundamentals?*
+
+**Answer:** They form the core principles (CIA Triad + Authenticity) of information security.
+
 *Explanation:* These are the foundational goals of cybersecurity. Everything else—policies, tools, controls—is built to achieve these.
 
 ---
 
-**iv. What refers to exploring the appropriate, ethical behaviors related to the online environment and digital media platform?**  
-**Answer:** Cyber Ethics  
+#### *iv. What refers to exploring the appropriate, ethical behaviors related to the online environment and digital media platform?*
+
+**Answer:** Cyber Ethics
+
 *Explanation:* Cyber ethics deals with the moral principles and rules that guide behavior in the digital world.
 
 ---
 
-**v. What type of text is transformed with the help of a cipher algorithm?**  
-**Answer:** Plaintext  
+#### *v. What type of text is transformed with the help of a cipher algorithm?*
+
+**Answer:** Plaintext
+
 *Explanation:* A cipher algorithm encrypts readable plaintext into unreadable ciphertext.
 
 ---
 
-**vi. "Cyberspace" was coined by ____.**  
-**Answer:** William Gibson  
+#### *vi. "Cyberspace" was coined by ____.*
+
+**Answer:** William Gibson
+
 *Explanation:* The term was popularized by author William Gibson in his 1984 novel *Neuromancer*.
 
 ---
 
-**vii. Network failure is primarily a ____ issue.**  
-**Answer:** Availability  
+#### *vii. Network failure is primarily a ____ issue.*
+
+**Answer:** Availability
+
 *Explanation:* Availability ensures that systems and data are accessible when needed. A network failure directly impacts this.
 
 ---
 
-**viii. ____ means the security of data from tampering by unidentified users.**  
-**Answer:** Integrity  
+#### *viii. ____ means the security of data from tampering by unidentified users.*
+
+**Answer:** Integrity
+
 *Explanation:* Integrity ensures that data is accurate, trustworthy, and protected from unauthorized modification.
 
 ---
 
-**ix. Which is a sort of independent type of malicious program that would not require any host program?**  
-**Answer:** Worm  
+#### *ix. Which is a sort of independent type of malicious program that would not require any host program?*
+
+**Answer:** Worm
+
 *Explanation:* Unlike viruses, worms are standalone malware that self-replicate and spread without needing to attach to a host file.
 
 ---
 
-**x. An act to injure, corrupt, or threaten a system or network is characterized ____.**  
-**Answer:** Cyber Attack  
+#### *x. An act to injure, corrupt, or threaten a system or network is characterized ____.*
+
+**Answer:** Cyber Attack
+
 *Explanation:* Any malicious act aimed at harming systems, networks, or data is termed a cyber attack.
 
 ---
 
-**xi. What is security misconfiguration?**  
-**Answer:** Improper configuration of security settings like insecure/default settings, unnecessary services, or incorrect permissions that leaves systems vulnerable.  
+#### *xi. What is security misconfiguration?*
+
+**Answer:** Improper configuration of security settings like insecure/default settings, unnecessary services, or incorrect permissions that leaves systems vulnerable.
+
 *Examples:* Default passwords, leaving unused ports open, verbose error messages, unsecured cloud buckets, or failing to apply patches.
 
 ---
 
-**xii. Differentiate worm and virus.**  
+#### *xii. Differentiate worm and virus.*
 
 - **Virus:** Requires a host program to spread; not independent.  
 - **Worm:** Is standalone and can spread independently across networks without user action.  
@@ -89,12 +111,16 @@ You will notice MAKAUT asking questions that differs from their syllabus but **d
 
 ### Q2. Define Security risk and analysis
 
+---
+
 - **Security Risk** → possibility of loss/damage to data, applications, or systems due to threats exploiting vulnerabilities.
 - **Risk Analysis** → process of identifying assets, vulnerabilities, threats, and evaluating their impact & likelihood to determine risk level.
 
 ---
 
 ### Q3. Explain Data backup security, Data archival security, and Data disposal considerations
+
+---
 
 - **Data Backup Security:** Protecting backup copies from loss, theft, or tampering (e.g., encryption, off-site storage).
 - **Data Archival Security:** Securing long-term stored data (archives) to maintain integrity, confidentiality, and accessibility.
@@ -104,6 +130,8 @@ You will notice MAKAUT asking questions that differs from their syllabus but **d
 
 ### Q4. What is the use of policy?
 
+---
+
 Security **policy** defines rules, guidelines, and best practices for protecting organizational IT assets.
 
 - Provides a framework for acceptable use, risk management, compliance, and incident response.
@@ -111,6 +139,8 @@ Security **policy** defines rules, guidelines, and best practices for protecting
 ---
 
 ### Q5. Define session hijacking and its various challenges
+
+---
 
 - **Session Hijacking:** Unauthorized access to a user session (e.g., stealing cookies, session IDs) to impersonate the user.
 - **Challenges:**
@@ -122,6 +152,8 @@ Security **policy** defines rules, guidelines, and best practices for protecting
 ---
 
 ### Q6. Explain the Feistel cipher in detail
+
+---
 
 - **Feistel Cipher:** A structure used to design symmetric block ciphers (e.g., DES).
 - **Process:**
@@ -140,6 +172,8 @@ Security **policy** defines rules, guidelines, and best practices for protecting
 
 ### Q7. Write short notes on: a. Firewall b. Backdoor c. Trapdoor
 
+---
+
 - **Firewall:** Security system (hardware/software) that monitors & controls network traffic using rules; protects against unauthorized access.
 - **Backdoor:** Hidden entry point in a system/application bypassing normal authentication; often exploited by attackers.
 - **Trapdoor:** A secret mechanism intentionally built into software/algorithm allowing special access, usually unknown to users.
@@ -147,6 +181,8 @@ Security **policy** defines rules, guidelines, and best practices for protecting
 ---
 
 ### Q8. a. Discuss the SQL Injection in detail
+
+---
 
 - **SQL Injection:** Web attack where malicious SQL code is inserted into queries to access or manipulate databases.
 - **Example:** `SELECT * FROM users WHERE username=' ' OR '1'='1' --'`
@@ -165,6 +201,8 @@ Security **policy** defines rules, guidelines, and best practices for protecting
 ---
 
 ### Q9. a. How VoIP hacking is done by hackers?
+
+---
 
 Hackers exploit VoIP by:
 
@@ -191,22 +229,28 @@ Hackers exploit VoIP by:
 
 ### Q10. a. Name and explain the two protocols to use for E-mail Security
 
+---
+
 1. **PGP (Pretty Good Privacy):** Uses RSA/DSS (asymmetric) + AES/DES (symmetric) for encrypting emails & digital signatures.
 2. **S/MIME (Secure/Multipurpose Internet Mail Extensions):** Provides encryption + signing using public key certificates.
 
 **b. Explain Cryptanalysis process.**
-**Ans:** Process of breaking ciphers without knowing the key by analyzing ciphertext. Methods:
+
+Process of breaking ciphers without knowing the key by analyzing ciphertext.  Methods:
 
 - Brute force attack.
 - Frequency analysis.
 - Differential/linear cryptanalysis (for modern block ciphers).
 
 **c. What is transposition cipher?**
-**Ans:** Classical cipher that scrambles the order of characters without changing them. Example: Rail Fence Cipher.
+
+Classical cipher that scrambles the order of characters without changing them. Example: Rail Fence Cipher.
 
 ---
 
 ### Q11. a. Elaborate "Cyber-crime plays a vital role against person, property, and govt. to protect all valuable Information and rights."
+
+---
 
 - **Against Person:** Identity theft, phishing, harassment.
 - **Against Property:** Hacking, data theft, malware damaging assets.
@@ -226,7 +270,8 @@ Hackers exploit VoIP by:
 - Read column-wise: **AA T C T K** = Ciphertext.
 
 **c. What is transposition cipher?**
-**Ans:** Cipher where letters are **rearranged** (not substituted). Security comes from the rearrangement pattern (key).
+
+Cipher where letters are **rearranged** (not substituted). Security comes from the rearrangement pattern (key).
 
 ---
 
@@ -676,7 +721,7 @@ flowchart TD
 
 ## Extra Questions
 
-### Q1. In an RSA algorithm, if p=5 and q=7, calculate the public key (e) and private key (d). Choose a suitable value for e
+### *Q1. In an RSA algorithm, if p=5 and q=7, calculate the public key (e) and private key (d). Choose a suitable value for e.*
 
 ---
 
@@ -700,13 +745,16 @@ flowchart TD
 
 ---
 
-**Structured Answer:**
-
 - **Introduction:** A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal traffic of a targeted server, service, or network by overwhelming it with a flood of internet traffic from multiple compromised sources (often a botnet).
+
 - **Explanation:** It targets the **Availability** of the CIA triad. Unlike a DoS attack from a single source, a DDoS attack comes from many distributed sources, making it harder to block.
+
 - **Mitigation Strategies:**
+
     1. **Traffic Scrubbing Centers:** Using third-party services (e.g., Cloudflare, AWS Shield) that filter malicious traffic before it reaches the target network. They analyze traffic patterns and block anomalous, high-volume traffic.
+
     2. **Rate Limiting:** Implementing rules on network devices (like routers and firewalls) to limit the number of requests a server accepts from a single IP address over a specific time window, reducing the impact of flooding.
+
 - **Conclusion:** A combination of on-premise and cloud-based solutions is often used for effective DDoS mitigation.
 
 ---
@@ -715,7 +763,6 @@ flowchart TD
 
 ---
 
-**Answer:**
 The primary defense mechanism is **using Parameterized Queries (also known as Prepared Statements)**.
 
 - **Why?** This technique ensures that an attacker cannot alter the intent of an SQL query, even if they insert malicious SQL code. The database treats user input strictly as data (parameters), not as executable parts of the SQL command.
@@ -724,6 +771,8 @@ The primary defense mechanism is **using Parameterized Queries (also known as Pr
 ---
 
 ### Q4. Calculate the ciphertext for the plaintext 'HELLO' using a Caesar Cipher with a shift of 3
+
+---
 
 **Answer:** **KHOOR**
 
@@ -748,13 +797,18 @@ A Caesar Cipher shifts each letter in the plaintext a fixed number of places dow
 
 ### Q5. Why is DNS susceptible to poisoning?
 
-**Answer:** DNS is susceptible to poisoning primarily because **its original design prioritized speed and efficiency over security**. It was built on a foundation of *trust* and does not inherently verify the authenticity of the responses it receives.
+---
+
+DNS is susceptible to poisoning primarily because **its original design prioritized speed and efficiency over security**. It was built on a foundation of *trust* and does not inherently verify the authenticity of the responses it receives.
 
 **Key reasons for its susceptibility:**
 
 1. **Lack of Authentication:** The traditional DNS protocol (UDP) does not verify the source of a DNS response. If a response matches the port number and query ID of a request, the DNS resolver often accepts it as legitimate, allowing attackers to "guess" these values and inject fake responses.
+
 2. **Caching:** The whole purpose of DNS is to cache responses to make the internet faster. A successful poisoning attack corrupts this cache, and the false information (e.g., a wrong IP address for a bank's website) is then served to all users until the cache expires, which could be hours or days.
+
 3. **UDP Protocol:** DNS primarily uses connectionless UDP, which is stateless. This makes it easy for attackers to send spoofed responses without going through a formal connection handshake.
+
 4. **Recursive Queries:** DNS resolvers that perform recursive lookups (asking multiple other servers on behalf of a client) are especially vulnerable, as they are constantly sending out queries that can be targeted.
 
 **The modern solution to this is DNSSEC (Domain Name System Security Extensions), which adds cryptographic signing to DNS records to verify their authenticity and integrity.**
@@ -763,7 +817,9 @@ A Caesar Cipher shifts each letter in the plaintext a fixed number of places dow
 
 ### Q6. List the phases of a penetration test
 
-**Answer:** The phases of a penetration test, often remembered by the acronym **PRE-ATTACK, ATTACK, POST-ATTACK**, are typically broken down into the following 5-7 steps:
+---
+
+The phases of a penetration test, often remembered by the acronym **PRE-ATTACK, ATTACK, POST-ATTACK**, are typically broken down into the following 5-7 steps:
 
 1. **Planning and Reconnaissance (Pre-Attack Phase)**
     - **Planning:** Defining the scope, goals, and rules of engagement (what systems are off-limits?).
