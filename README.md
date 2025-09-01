@@ -9,11 +9,13 @@ Greetings! Fellow learners. I have created this repository when I was preparing 
 *(If the above link doesn’t work, open directly here:  
 <https://github.com/DipsanaRoy/cyber-security-pec-cs702e/blob/main/NOTES.md>)*
 
+---
+
 ## 📌 Useful Links after studying
 
-1. [MAKAUT Organizer and Notes](https://drive.google.com/drive/folders/1_1e380rp6P3uYyEv8RXrzyp0QrSumpmt)
-2. [Mnemonics Cheat Sheet](https://github.com/DipsanaRoy/cyber-security-pec-cs702e/blob/main/mnemonics-cheat-sheet.md)
-3. [Solved PYQs](https://github.com/DipsanaRoy/cyber-security-pec-cs702e/blob/main/previous-year-questions.md)
+1. [Mnemonics Cheat Sheet](https://github.com/DipsanaRoy/cyber-security-pec-cs702e/blob/main/mnemonics-cheat-sheet.md)
+2. [Solved PYQs](https://github.com/DipsanaRoy/cyber-security-pec-cs702e/blob/main/previous-year-questions.md)
+3. [MAKAUT Organizer and Notes](https://drive.google.com/drive/folders/1_1e380rp6P3uYyEv8RXrzyp0QrSumpmt)
 
 ---
 
