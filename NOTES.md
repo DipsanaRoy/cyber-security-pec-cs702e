@@ -416,13 +416,51 @@ Ciphers are the **building blocks** of digital security. Whether it’s WhatsApp
   - **Plaintext:** HELLO
   - **Ciphertext:** IFMMP (Each letter shifted by +1, a.k.a. Caesar Cipher with shift=1)
 
+---
+
 ### 2. Caesar Cipher (A Type of Substitution Cipher)
 
 - **How it works:** Each letter is shifted a fixed number of places down the alphabet.
+
 - **Example (Shift = 3):**
+
   - **Plaintext:** HELLO
   - **Ciphertext:** KHOOR
   - *H (+3) = K, E (+3) = H, L (+3) = O, L (+3) = O, O (+3) = R*
+
+- **Caesar Cipher (X, Y, Z with +3 or +10 shifts)** → notice how the alphabet "wraps around":
+
+  - `X + 3 = A`
+  - `Y + 3 = B`
+  - `Z + 3 = C`
+  - `X (24) + 10 = 34 → 34 - 26 = 8 → H`
+  - `Y (25) + 10 = 35 → 35 - 26 = 9 → I`
+  - `Z (26) + 10 = 36 → 36 - 26 = 10 → J`
+
+- **Formulas:**
+
+  - **Encryption:**
+
+    $$
+    E(x) = (x + n) \mod 26
+    $$
+  - **Decryption:**
+
+    $$
+    D(x) = (x - n) \mod 26
+    $$
+  - where:
+
+    - $x$ = position of the letter (A = 0, B = 1, …, Z = 25)
+    - $n$ = shift value
+
+- **Decryption Example (Shift = 3):**
+
+  - **Ciphertext:** KHOOR
+  - **Plaintext:** HELLO
+  - *K (10) − 3 = H (7), H (7) − 3 = E (4), O (14) − 3 = L (11), O (14) − 3 = L (11), R (17) − 3 = O (14)*
+
+---
 
 ### 3. Transposition Cipher
 
@@ -437,6 +475,8 @@ Ciphers are the **building blocks** of digital security. Whether it’s WhatsApp
     ```
 
   - **Ciphertext:** "ATCOA TA KTDY" (Read row-wise: Row1: A T C O A, Row2: T A K T D Y)
+
+---
 
 ### 4. Feistel Cipher (Network)
 
