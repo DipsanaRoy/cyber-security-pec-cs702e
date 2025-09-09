@@ -18,17 +18,94 @@ Let's go through an overview and some extra, out of syllabus topics MAKAUT asks 
 
 ---
 
-## DoS (Denial of Service)
+## Botnets
 
-Attacker floods a server with too many requests, making it unavailable.
+- Networks of compromised computers (zombies) controlled by a hacker.
+- Used for DDoS, spamming, crypto mining.
 
-*Analogy:* One person keeps calling your phone nonstop so no one else can reach you.
+*Example:* Mirai botnet took down Netflix & Twitter in 2016.
 
-## DDoS (Distributed DoS)
+---
 
- Same, but thousands of computers (botnets) attack at once.
+## DoS vs DDos
 
-*Analogy:* Imagine thousands of spam callers hitting your number simultaneously.
+### 🔹 DoS (Denial of Service)
+
+- **What it is:** Attacker overwhelms a server/network/service with requests until it crashes or becomes unusable.
+- **Example:** Sending repeated pings to a web server until it cannot handle real users.
+
+---
+
+### ✅ DoS — Prevention / Mitigation
+
+1. **Rate Limiting:** Restrict how many requests a single IP can make in a time frame.
+2. **Firewalls:** Block suspicious IP addresses or request patterns.
+3. **Intrusion Detection Systems (IDS):** Identify unusual spikes in traffic.
+4. **Redundancy:** Use backup servers/load balancers so one server isn’t overloaded.
+5. **Traffic Filtering (Blackholing/Sinkholing):** Redirect malicious traffic away.
+
+---
+
+💡 **Mnemonic: Rate Limiting RIFT** → ***R**ate **L**imiting, **R**edundancy, **I**ntrusion Detection System (IDS), **F**irewalls, **T**raffic Filtering.*
+
+---
+
+### 🔹 DDoS (Distributed Denial of Service)
+
+- **What it is:** Same as DoS, but done using **many devices** (botnets). Attack comes from multiple IPs worldwide, making it much harder to stop.
+- **Example:** Hackers infect thousands of computers/IoT devices with malware, then command them to attack a target at once.
+
+---
+
+### ✅ DDoS — Prevention / Mitigation
+
+1. **Content Delivery Networks (CDN):** Distribute requests across many servers worldwide (Cloudflare, Akamai).
+2. **DDoS Protection Services:** Specialized providers (e.g., Cloudflare, AWS Shield, Akamai Prolexic) absorb/mitigate attacks.
+3. **Anycast Routing:** Direct traffic to multiple data centers, dispersing load.
+4. **Rate Limiting + CAPTCHA:** Force suspicious traffic to prove it’s human.
+5. **Botnet Detection:** Use AI/behavior analysis to block abnormal request patterns.
+6. **ISP-level Filtering:** Internet Service Providers can block bad traffic before it reaches you.
+
+---
+
+💡 **Mnemonic: BI ARC CD** *→ **B**otnet Detection, **I**SP-Level Filtering, **A**nycast Routing, **R**ate Limiting, **C**aptcha, **C**DN(Content Delivery Networks), **D**Dos Protection Services.*
+
+---
+
+### 🔑 Difference in Difficulty
+
+- **DoS:** Easier to detect (all requests from one source).
+- **DDoS:** Much harder to detect (traffic comes from thousands of sources). Needs specialized infrastructure.
+
+---
+
+### ⚡In short
+
+- DoS = one attacker → easier to block.
+- DDoS = army of attackers → needs advanced prevention (CDN, DDoS protection).
+
+---
+
+## 📊 Real-life DDoS Attacks
+
+| **Attack**  | **Year** | **How it Happened** | **Impact** | **Prevention / Response** |
+| :--- | :--- | :--- | :--- | :--- |
+| **GitHub**  | 2018 | Attackers abused **Memcached servers** to amplify traffic → 1.35 Tbps flood | GitHub went down \~10 min | Used **Akamai DDoS protection** to absorb/filter traffic |
+| **Dyn DNS** | 2016 | **Mirai botnet** (IoT devices: cameras, routers) flooded DNS servers | Took down Twitter, Netflix, PayPal, Reddit, Spotify (U.S.) | Worked with ISPs + security providers, filtered bad traffic |
+| **Estonia** | 2007 | Politically motivated DDoS on gov, banks, media | Banking halted, gov services blocked nationwide | Built strong **national cyber defense**, monitoring & resilience |
+
+### 💡 Takeaway
+
+- These attacks show that **DDoS can cripple even the biggest players**.
+- Prevention = mix of **cloud protection services, traffic filtering, redundancy, and global monitoring**.
+
+---
+
+### ⚡ Quick memory hook
+
+- **GitHub = Biggest tech DDoS (fast recovery)**
+- **Dyn = IoT botnet chaos (took down Netflix/Twitter)**
+- **Estonia = First country-scale cyber war**
 
 ---
 
@@ -47,15 +124,6 @@ Attacker floods a server with too many requests, making it unavailable.
 Malicious software that secretly collects your info (keystrokes, browsing, credentials).
 
 *Example:* A fake free game secretly logging your credit card inputs.
-
----
-
-## Botnets
-
-- Networks of compromised computers (zombies) controlled by a hacker.
-- Used for DDoS, spamming, crypto mining.
-
-*Example:* Mirai botnet took down Netflix & Twitter in 2016.
 
 ---
 
@@ -1155,7 +1223,16 @@ Using digital attacks to create **fear, disruption, or physical harm** to suppor
 
 ### 🌐 Real Examples
 
-- **Estonia, 2007:** Banks and government websites were shut down for weeks by massive cyber attacks after a political dispute.
+- **Estonia Cyber Attack (2007)**  
+  - **What happened:**
+      Government websites, banks, and news outlets in Estonia were hit by massive DDoS waves by massive cyber attacks after a political dispute.
+  - **Reason:**
+      Political tensions after a Soviet-era statue was relocated.
+  - **Impact:**
+      Banking halted, news media blocked, gov services disrupted — first time a country was hit at this scale.
+  - **Prevention used:**
+      Estonia strengthened its **national cyber defense**, becoming one of the leading countries in cybersecurity today.
+
 - **ISIS:** Used social media to spread terror propaganda and recruit members globally.
 - **Stuxnet:** A sophisticated cyber weapon that physically damaged nuclear centrifuges in Iran, setting back their program years. It showed how a digital attack can cause real-world destruction.
 
