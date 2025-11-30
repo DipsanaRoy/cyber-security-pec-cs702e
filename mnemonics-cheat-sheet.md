@@ -14,7 +14,7 @@
     * **I**ntegrity
     * **A**vailability
 
-3. **NIST Framework Functions:** **IPDRR** (Identify, Protect, Detect, Respond, Recover)
+3. **NIST Framework Functions:** **DR RIP** (Identify, Protect, Detect, Respond, Recover)
 
 4. **5 Pillars of Information Assurance (IA):** **CIAAN**
     * **C**onfidentiality
@@ -49,7 +49,39 @@
 
 ## Unit 3: Ethical Hacking & Social Engineering
 
-1. **Phases of Ethical Hacking:** **Student Life Simulator**
+1. **Steps in Threats Modelling:** **A-TV-ARM**
+    * **A**ssets
+    * **T**hreats
+    * **V**ulnerabilities
+    * **A**ttack Vectors
+    * **R**isks
+    * **M**itigate Threats
+
+2. **Popular Threat Modelling Methodologies**
+
+    * **STRIDE (by Microsoft)** → Looks at threats as:
+        * **S**poofing identity
+        * **T**ampering with data
+        * **R**epudiation (denying actions)
+        * **I**nformation disclosure
+        * **D**enial of Service
+        * **E**levation of privilege
+
+    * **DREAD** → Risk rating model
+        * **D**amage
+        * **R**eproducibility
+        * **E**xploitability
+        * **A**ffected users
+        * **D**iscoverability
+
+3. **Layers in Security Architecture:** **Bluetooth API → BT API**
+    * **B**usiness
+    * **T**echnology
+    * **A**pplication
+    * **P**hysical
+    * **I**nformation
+
+4. **Phases of Ethical Hacking:** **Student Life Simulator**
     * **Recon** the syllabus
     * **Scan** what’s important
     * **Gain** marks
@@ -57,40 +89,39 @@
     * **Cover tracks** by forgetting everything after exams
     * **Report** card
 
-2. **Types of Phishing:** **SVWS** – Some Very Wicked Scams
+5. **Types of Phishing:** **SVWS** – Some Very Wicked Scams
     * **S**mishing
     * **V**ishing
     * **W**haling
     * **S**pear phishing
 
-3. **Types of Social Engineering:** **PPT BQI** (Like a "PowerPoint BQI file")
-    * **P**hishing
+6. **Types of Social Engineering:** **PPT BQI** (Like a "PowerPoint BQI file")
     * **P**retexting
-    * **T**ailgating
+    * **P**iggybacking/**T**ailgating
     * **B**aiting
     * **Q**uid Pro Quo
     * **I**mpersonation
 
-4. **Preventing Insider Threats (The 4D Shield):** **D.D.D.D**
+7. **Preventing Insider Threats (The 4D Shield):** **D.D.D.D**
     * **D**eny Excess Access
     * **D**etect Odd Behavior
     * **D**efend with Policies
     * **D**ouble-Check Identity
 
-5. **Preventing Insider Threats (Alternative):** **ABP India**
+8. **Preventing Insider Threats (Alternative):** **ABP India**
     * **A**ccess
     * **B**ehavior
     * **P**olicies
     * **I**dentity
 
-6. **Defense Against Social Engineering:** **AVSSI**
+9. **Defense Against Social Engineering:** **AVSSI**
     * **A**wareness Training
     * **V**erification Culture
     * **S**imulated Attacks
     * **S**trong Policies
     * **I**ncident Reporting
 
-7. **Defense Against Social Engineering (Alternative):** **VCAT PAIR 🐱**
+10. **Defense Against Social Engineering (Alternative):** **VCAT PAIR 🐱**
     * **V**erification Culture
     * **C**ulture (Awareness)
     * **A**wareness (Training)
@@ -100,7 +131,17 @@
     * **I**ncident reporting
     * **R**eporting
 
-8. **OWASP Top 10 (Example):** **A01: Broken Access Control** – Remember by thinking of an unlocked door (**A**ccess).
+11. **OWASP:** **Open Web Application Security Project**
+
+    1. Don't worry if you're struggling to memorize them. Don't memorize the exact words. Memorize the important ones: **Injection**, **Broken Access Control**, and **Cryptographic Failures**.
+
+    2. Now if you want to memorize more you can create mind maps. Let's recall **Information Assurance (IA)** where we studied **NRACIA**. You can see few topics linked to it i.e. **Identification and Authentication Failures** and **Software and Data Integrity Failures**.
+
+    3. **Forgery** is a crime we are daily aware of. Illegal foreign immigrants from other countries forcefully penetrate the border and create fake passports and identity cards. You can see **Server Side Request Forgery** linked to it.
+
+    4. Everyone starts to fall behind with an old mindset. We must keep ourselves upto date with the real world. Similary **components can become outdated and vulnerable**.
+
+    5. Last is **Sequrity Misconfiguration** and **Insecure Design**, think of **IDS/IPS** and **Software Engineering**.
 
 ## Unit 4: Cyber Forensics & Auditing
 
