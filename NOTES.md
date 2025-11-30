@@ -1647,7 +1647,7 @@ These tools are used by both **security professionals (ethical)** and **hackers 
 | **tcpdump** | A command-line-based packet analyzer. It is the predecessor to Wireshark and is a powerful tool available by default on most Unix-like systems (Linux, macOS). | Linux, macOS, Unix |
 | **TShark** | The command-line version of Wireshark. Useful for automating capture and analysis. | Windows, macOS, Linux |
 | **Kismet** | A powerful tool specifically for sniffing wireless (Wi-Fi) networks. It can detect hidden networks and capture traffic. | Linux, macOS |
-| **Cain & Abel** | A older but famous tool for Windows that could sniff passwords, perform ARP poisoning, and crack encrypted passwords. | Windows |
+| **Cain & Abel** | A older but famous tool for Windows that could sniff passwords, perform ARP (Address Resolution Protocol) poisoning, and crack encrypted passwords. | Windows |
 
 ---
 
@@ -3030,7 +3030,7 @@ A **forensic investigator** is like a digital detective. Their role is not just 
 💡 **In short**:
 The investigator’s job = **Find → Preserve → Analyze → Report** while keeping it legally valid.
 
-**Remember the GOLD mnemonic?**
+**Remember the GOLD mnemonic?**  
 "*Ident preserves CD collections while examine analyzes presentations*" ;)
 
 ---
@@ -3075,7 +3075,7 @@ Think of this as the **step-by-step workflow** investigators follow (very struct
 
 ---
 
-**Remember the GOLD mnemonic?**
+**Remember the GOLD mnemonic?**  
 "*Ident preserves CD collections while examine analyzes presentations*" ;)
 
 ---
@@ -3109,7 +3109,7 @@ Unlike pulling files from a hard drive, this is about grabbing data **while it�
 
 📌 **Mini Trick**: *“Logs + Packets + Time = Strong Network Evidence”*
 
-Exactly 👍 — **PCAP = Packet CAPture** (standard format for storing captured network traffic).
+Haha, caught you 👀. Exactly 👍 — **PCAP = Packet CAPture** (standard format for storing captured network traffic).
 
 ---
 
@@ -3153,6 +3153,20 @@ This is where all the hard technical work gets translated into something a **jud
 8. **Appendices**
    - Raw logs, extra screenshots, hash values.
 
+---
+
+#### 💡 **Mnemonic:**
+
+Say each of the following for atleast 0.3s just like a kindergarten kid:  
+
+- Say **I**. Now say **OM** (🕉️).
+- We're making progress here. Now say **IOM**. Very well.
+- Now say **FA** *(like FAE)*, good. Now say **CRA** *like CRAB (🦀) without the B.*
+- Now say **FACRA**.
+- Good, now say it as a whole **IOM FACRA**, *IOM FACRA, IOM FACRA.*
+
+Well done 😁, **IOM FACRA** *→ **I**dentification, **O**bjectives, **M**ethodology, **F**indings, **A**nalysis, **C**onclusion, **R**ecommendations, **A**ppendices*
+
 #### ✨ Best Practices (Mnemonic: **C-FACED**)
 
 - **C**lear
@@ -3168,11 +3182,11 @@ This is where all the hard technical work gets translated into something a **jud
 
 #### 🔎 What is Auditing in Cybersecurity?
 
-Auditing = A **systematic, independent examination** of systems, applications, processes, and policies to check whether they comply with security standards and work as intended.
+Auditing = A **systematic, independent examination of systems, applications, processes, and policies** to check whether they comply with security standards and work as intended.
 
 Think of it like: *“An investigator for prevention, not just detection.”*
 
-**Bada se chota ja raha haa**, scope is decreasing → `System (parent)` → `processes (bacche)` → `policies(concepts → anewale bacche)`.
+**Bada se chota ja raha haa**, scope is decreasing → `System & Apps (parent)` → `processes (bacche)` → `policies(concepts → anewale bacche)`.
 You liked it don't you 🤣?!
 
 #### 🛠️ Types of Audits
@@ -3183,12 +3197,13 @@ You liked it don't you 🤣?!
 - **Operational Audit** → Checks efficiency and effectiveness of security operations.
 - **Technical Audit** → Focuses on system configurations, access logs, vulnerabilities.
 
-💡 **Mnemonic: ROTIE**
-**R** → Rules aka Compliance
-**O** → Operational
-**T** → Technical
-**I** → Internal
-**E** → External
+#### 💡 Mnemonic: **ROTIE** 🫓
+
+- **R** → Rules aka Compliance
+- **O** → Operational
+- **T** → Technical
+- **I** → Internal
+- **E** → External
 
 #### 🎯 Audit Objectives
 
@@ -3197,10 +3212,11 @@ You liked it don't you 🤣?!
 - Detect **anomalies / misuse / insider threats**.
 - Verify **effectiveness of controls**.
 
-💡 **Mnemonic: CIA, EC PC, MIA**
-**CIA** → Confidentiality, Itegrity, Availability
-**EC PC** → Effectiveness Control, Policies Compliance
-**MIA** → Misuse, Insider Threats, Anomalies
+#### 💡 Mnemonic: **CIA, EC PC, MIA**
+
+- **CIA** → Confidentiality, Itegrity, Availability
+- **EC PC** → Effectiveness Control, Policies Compliance
+- **MIA** → Misuse, Insider Threats, Anomalies
 
 #### 📝 Audit Checklist (Mnemonic: SCARF)
 
@@ -3216,7 +3232,7 @@ You liked it don't you 🤣?!
 
 Audit planning = the **blueprint** 📝 before actually auditing.
 
-#### 🛠️ Steps in Planning (Mnemonic: SCOPE + CROPS)
+#### 🛠️ Steps in Planning (Mnemonic: SCOPE / CROPS)
 
 1. **S**et audit **O**bjectives → What do we want to check? (compliance, risks, efficiency)
 2. **C**hoose **C**riteria → ISO 27001, NIST, PCI DSS, org policies, laws.
@@ -3231,8 +3247,6 @@ Audit planning = the **blueprint** 📝 before actually auditing.
 - Keeps audit efficient & cost-effective.
 - Provides clear path for evidence collection.
 
-Perfect! 👌 You nailed the **definition + scope flow** idea 💡 (big → small, parent → child). Also your "Set, Choose, Organize, Prepare, Execute" is already clean enough — don’t stress on the micro details; just remember it’s the **audit roadmap**.
-
 ---
 
 ### 9. Information Security Management System (ISMS)
@@ -3242,7 +3256,7 @@ Think of ISMS as the **skeleton of an organization’s security** 🦴 — polic
 **Don't confuse it with EISA!**
 EISA is the architecture, this is the management.
 
-#### 🔑 Core Elements (Mnemonic: Plan Do Check Act)
+#### 🔑 Core Elements
 
 1. **Plan** → Define security objectives, risks, controls (ISO 27001, NIST etc.).
 2. **Do** → Implement security controls (access control, encryption, training).
@@ -3262,11 +3276,11 @@ EISA is the architecture, this is the management.
 
 Think of it as a **security health check-up** 🩺 for the organization’s ISMS.
 
-🪜 **Steps (Mnemonic: PEP-CAR 🚗)**
+🪜 **Steps (Mnemonic: PET-CAR 🚗)**
 
 1. **P**lan → Define audit scope, objectives, criteria.
 2. **E**valuate → Collect evidence (interviews, logs, configs).
-3. **P**erform testing → Verify controls in action.
+3. Perform **t**esting → Verify controls in action.
 4. **C**ompare → Match findings vs ISO 27001 / policy requirements.
 5. **A**nalyze → Identify gaps, risks, weaknesses.
 6. **R**eport → Prepare clear, factual, actionable audit report (C-FACED 😉).
@@ -3300,14 +3314,15 @@ Think of it as a **rulebook + framework** 📘 for securing information.
 6. **Performance Evaluation** – Monitoring, measurement, audits, reviews.
 7. **Improvement** – Corrective actions, continual improvement.
 
-💡 **Mnemonic: CLIPS OP**
-**C** → Context of Organization
-**L** → Leadership
-**I** → Improvement
-**P** → Performance Evaluation
-**S** → Support
-**O** → Operation
-**P** → Planning
+#### 💡Mnemonic: **CLIPS OP**
+
+- **C** → Context of Organization
+- **L** → Leadership
+- **I** → Improvement
+- **P** → Performance Evaluation
+- **S** → Support
+- **O** → Operation
+- **P** → Planning
 
 #### Annex A Controls (114 controls, 14 domains)
 
