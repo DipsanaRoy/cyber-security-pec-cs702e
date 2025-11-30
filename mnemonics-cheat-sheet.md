@@ -194,10 +194,10 @@
 
 8. **ISMS Core Elements (PDCA):** **Plan Do Check Act**
 
-9. **ISMS Audit Process:** **PEP-CAR 🚗**
+9. **ISMS Audit Process:** **PET-CAR 🚗**
     * **P**lan
     * **E**valuate
-    * **P**erform testing
+    * **T**est
     * **C**ompare
     * **A**nalyze
     * **R**eport
@@ -210,6 +210,16 @@
     * **S**upport
     * **O**peration
     * **P**lanning
+
+11. **Typical Report Structure: IOM FACRA**
+    * **I**dentification
+    * **O**bjectives
+    * **M**ethodology
+    * **F**indings
+    * **A**nalysis
+    * **C**onclusion
+    * **R**ecommendations
+    * **A**ppendices
 
 ## Unit 5: Cyber Ethics and Laws
 
