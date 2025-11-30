@@ -370,10 +370,10 @@ Let's make this concrete with a weekly backup example. Assume a **Full Backup** 
 - **Backing Up Virtual Machines (VMs):**
   - **Challenge:** You can't just install an agent on a VM and back it up like a physical server. The hypervisor (ESXi, Hyper-V) is managing the hardware, and the VM is just a set of files.
   - **Solution:** Modern backup software uses APIs (like VMware's VADP) to take **snapshot-aware backups**. The process is:
-        1. Request a snapshot of the VM from the hypervisor (takes a second).
-        2. The VM continues running normally.
-        3. The backup software reads the stable snapshot file (e.g., a `.vmdk` file).
-        4. The snapshot is deleted after the backup is complete.
+      1. Request a snapshot of the VM from the hypervisor (takes a second).
+      2. The VM continues running normally.
+      3. The backup software reads the stable snapshot file (e.g., a `.vmdk` file).
+      4. The snapshot is deleted after the backup is complete.
   - This allows for **image-level, application-consistent** backups of VMs with near-zero downtime.
 
 - **Protecting Data from Ransomware:**
@@ -542,7 +542,7 @@ Ciphers are the **building blocks** of digital security. Whether it’s WhatsApp
       T   A   K   T   D   Y
     ```
 
-  - **Ciphertext:** "ATCOA TA KTDY" (Read row-wise: Row1: A T C O A, Row2: T A K T D Y)
+  - **Ciphertext:** "ATCOA TAKTDY" (Read row-wise: Row1: A T C O A, Row2: T A K T D Y)
 
 ---
 
@@ -554,7 +554,7 @@ Ciphers are the **building blocks** of digital security. Whether it’s WhatsApp
 
 ---
 
-### **Mnemonic for Classical Ciphers: "SCT"**
+### Mnemonic for Classical Ciphers: "SCT"
 
 - **S**ubstitution → **S**wap letters
 - **C**aesar → **C**hange by shift
@@ -926,7 +926,7 @@ Alright 🚀 mini pop-quiz time! Don’t overthink, just go with instinct — sh
 “*Ident preserves CD collection while examine analyses presentations*”
 
 *Do it five times:*
-Decrypt it with the private keys in the mind: Identification, Preservation, Collection, Examination, Analysis, Presentation
+Decrypt it with the private keys in your mind: Identification, Preservation, Collection, Examination, Analysis, Presentation
 
 ---
 
@@ -1032,12 +1032,17 @@ Decrypt it with the private keys in the mind: Identification, Preservation, Coll
 
 ### 3. Five Core Functions (NIST Framework)
 
+**Order is important!**
+
 1. **Identify** → assets, risks.
 2. **Protect** → safeguards (firewalls, encryption).
 3. **Detect** → anomalies, breaches.
 4. **Respond** → incident management.
 5. **Recover** → restore services.
-   💡 Think: *Identify → Protect → Detect → Respond → Recover = full security lifecycle.*
+
+💡 **Think:** *Identify → Protect → Detect → Respond → Recover = full security lifecycle.*
+
+💡 **Mnemonic** **DR RIP** *→ **D**etect, **R**espond, **R**ecover, **I**dentity, **P**rotect*
 
 ---
 
@@ -1061,7 +1066,7 @@ Decrypt it with the private keys in the mind: Identification, Preservation, Coll
 ### 6. Cyberspace
 
 - The **virtual environment** of interconnected networks.
-- Includes Internet + intranets + cloud + IoT.
+- Includes Internet + intranets (organizations privatized network that uses internet technology) + cloud + IoT.
 - Borderless & global → harder to regulate.
 
 ---
@@ -1116,7 +1121,7 @@ Cyber threats = malicious attempts to damage, steal, or disrupt systems.
 
 - Psychological manipulation.
 - Scenarios:
-  - **Phishing:** - Fake communication (email, SMS, websites) designed to steal info. 👉 Always exam favorite.
+  - **Phishing:** Fake communication (email, SMS, websites) designed to steal info. 👉 Always exam favorite.
   - **Pretexting:** Pretending to be someone trustworthy (“I’m from IT, give me your password”).
   - **Baiting:** Leaving an infected USB labeled “Salary\_Hike.pdf”.
 
@@ -1370,7 +1375,8 @@ Think of hackers like characters in a movie:
 - Grey Hat = Anti-hero,
 - Script Kiddie = Side character messing things up,
 - Hacktivist = Rebel,
-- State-Sponsored = Government’s secret agents.
+- State-Sponsored = Government’s secret agents,
+- Cyber-Terrorists = Daku Mangal Singh from Chota Bheem 🟠.
 
 ---
 
@@ -1395,7 +1401,7 @@ This one’s a common confusion. Many people call all bad hackers "crackers," bu
 Crackers made the following possible too:
 
 - Once upon a time, there exists a lot of movie watchers who survived the harsh prices by using torrent and VLC Media Player 😂.
-- When you use a paid software for free via cracked torrent sites you're providing the price indirectly by selling your privacy 😭.
+- When you use a paid software for free via cracked torrent sites you're providing the price indirectly unknowingly by selling your privacy 😭.
 
 ---
 
@@ -1448,8 +1454,8 @@ Cyber-attacks exploit weaknesses (vulnerabilities) in systems, apps, or human be
 - **Attack:** SQL Injection.
 - **Vulnerability:** Poorly coded login form that doesn’t sanitize input.
 
-⚡ **Link it like this:**
-Vulnerability = unlocked door 🚪
+⚡ **Link it like this:**  
+Vulnerability = unlocked door 🚪  
 Cyber-Attack = thief walking in 🏃‍♂️
 
 ### 🔐 SSL Certificates (now mostly TLS)
@@ -1521,7 +1527,7 @@ Malware = **malicious software**.
 3. **Ransomware**
 
    - Encrypts files with strong ciphers (AES, RSA).
-   - Drops a ransom note (`readme.txt`, like your teacher saw).
+   - Drops a ransom note (`readme.txt`).
    - Without the decryption key (held by attacker), files are locked forever.
 
 4. **Rootkits**
@@ -1546,9 +1552,8 @@ Malware = **malicious software**.
 
 ---
 
-💡 **Why cracked/torrent software is risky?**
+💡 **Why cracked/torrent software is risky?**  
 Because attackers know: “People want it free → They’ll disable antivirus to install → Perfect chance to slip in malware.”
-Exactly what happened to your teacher 😅
 
 👉 **Real case:** WannaCry ransomware in 2017 hit hospitals, banks, railways.
 
@@ -1892,6 +1897,44 @@ This layered approach makes modern malware highly effective and dangerous. Under
 
 ---
 
+#### **Phishing: The "Wide Net" Scattergun Approach**
+
+- **Target:** Anyone and everyone.
+- **Method:** Sending massive volumes of generic emails, texts, or social media messages, hoping to catch a small percentage of people.
+- **The Bait:** The messages are not personalized. They often create a sense of urgency or fear, like:
+  - "Your account has been compromised! Click here to secure it."
+  - "You have a package delivery issue. Confirm your address here."
+  - "You've won a prize! Claim it now."
+- **Analogy:** Casting a giant fishing net into the ocean to catch whatever fish you can.
+
+---
+
+#### **Spear Phishing: The "Harpoon" Precision Attack**
+
+- **Target:** A specific individual, organization, or small group.
+- **Method:** The attacker does their homework. They use publicly available information (from LinkedIn, company websites, social media) to craft a highly convincing and personalized message.
+- **The Bait:** The message appears to come from a trusted source and references specific details to build trust. For example:
+  - An email to an accountant pretending to be the CEO, urgently requesting a wire transfer for a "confidential acquisition."
+  - An email to an HR staffer with a malicious resume attachment, supposedly from a highly-recommended candidate.
+  - An email to a system administrator pretending to be from the IT vendor, asking them to reset a password on a fake login portal.
+- **Analogy:** A fisherman using a speargun to target one specific, high-value fish.
+
+---
+
+#### **A More Extreme Version: Whaling**
+
+You might also hear the term **"Whaling,"** which is a type of spear phishing that targets the "big fish"—CEOs, CFOs, other high-level executives. The level of research and personalization is even higher, as the potential payoff for the attacker is much greater.
+
+---
+
+**In a nutshell:**
+
+- **Phishing:** "Dear Customer, your account is on hold."
+- **Spear Phishing:** "Hi [Your Full Name], I loved your presentation at the [Real Conference Name] last week. Here's that report you asked for. [Malicious Link]"
+- **Whaling:** "John, this is urgent. I need you to wire $50,000 to account X for the confidential merger we discussed. This is top priority. - [Spoofed CEO's Name]"
+
+---
+
 ### 🔍 14. Advanced Persistent Threats (APTs)
 
 **What it is:**
@@ -2001,10 +2044,10 @@ Let's break down why:
 
 ### Quiz (Unit 2 Recap)📝
 
-1. Which attack type involves secretly listening to network traffic?
-   a) Spoofing
-   b) Sniffing
-   c) DoS
+1. Which attack type involves secretly listening to network traffic?  
+   a) Spoofing  
+   b) Sniffing  
+   c) DoS  
    d) SQL Injection
 
 2. What’s the difference between a Worm and a Virus?
@@ -2058,7 +2101,7 @@ Let's break down why:
 
 ### 🔹 2. Threats and Attack Vectors
 
-👉 **Threat** = any potential danger that can exploit a weakness.
+👉 **Threat** = any potential danger that can exploit a weakness.  
 👉 **Attack Vector** = the *pathway* or *method* hackers use to deliver that attack.
 
 Think of it like this:
@@ -2108,13 +2151,13 @@ Think of it like this:
 
 Answer in short (one word/sentence is fine):
 
-1. A hacker sends you a phishing email with a fake login page.
+1. A hacker sends you a phishing email with a fake login page.  
    👉 What’s the **attack vector**?
 
-2. Your system has a weak, outdated Wi-Fi password.
+2. Your system has a weak, outdated Wi-Fi password.  
    👉 What’s the **attack vector**?
 
-3. A disgruntled employee leaks company data.
+3. A disgruntled employee leaks company data.  
    👉 What’s the **threat type** here?
 
 4. Which is broader in scope: **threat** or **attack vector**?
@@ -2198,7 +2241,7 @@ It’s the process of **thinking like an attacker** to figure out:
 6. **Mitigate Threats** → Apply countermeasures.
    *Ex:* Patch systems, add firewalls, train employees.
 
-💡**Mnemonic:** AT-VART: Assets, Threats, Vulnerabilities, Attack Vectors, Risks, Threats
+💡**Mnemonic:** A-TV-ARM: Assets, Threats, Vulnerabilities, Attack Vectors, Risks, Mitigation
 
 ---
 
@@ -2289,8 +2332,8 @@ Learn this, it helps:
 4. **Technology Layer** → Networks, servers, endpoints.
 5. **Physical Layer** → CCTV, biometrics, physical access.
 
-**💡 Mnemonic:** BlueTooth API → BT API
-Business, Technology, Application, Physical, Information
+**💡 Mnemonic:** BlueTooth API → BT API  
+***B**usiness, **T**echnology, **A**pplication, **P**hysical, **I**nformation*
 
 ---
 
@@ -2306,14 +2349,6 @@ Business, Technology, Application, Physical, Information
 💡 **Analogy:**
 If threat modelling is like planning *how thieves might break into your house*,
 EISA is like *designing the entire neighborhood* with police stations, CCTV, streetlights, and locks on every house.
-
-🔥 That’s brilliant, Dipsana!
-You’re making **mnemonics like a hacker-professor yourself** 😎
-
-- **BT API** → perfect shortcut for remembering the layers.
-- **Chat GPT** → super creative for the key components! (Policies → Procedures → Tech, then Governance-People-Tech).
-
-This way, you’re building your own **memory palace** 🏰 for cybersecurity concepts.
 
 ---
 
@@ -2350,11 +2385,11 @@ It’s like a **health check-up for systems**:
 
   **Mnemonic:** Remember Student Life Simulator?
     1. **Recon** Syllabus
-    2. **Scan** Subjects
+    2. **Scan** Important Portions
     3. **Gain** Marks
     4. **Maintain access** by revision
-    5. **Report** Card
-    You can ignore the forget everything part (cover tracks) for this one 🤣.
+    5. **Report** Card  
+   You can ignore the forget everything part (cover tracks) for this one 🤣.
 
 - **Types:**
 
@@ -2509,7 +2544,7 @@ Phishing is like an umbrella, and these are the flavors:
 
 2️⃣ **Whaling 🐋** (*big shots*)
 
-- Big fish only — CEOs, CFOs, directors.
+- Big fish only — CEOs, CFOs, directors, higher level executives.
 - Attackers mimic business emails.
 - Example: Fake “CEO request” asking finance to wire funds to an account.
 
@@ -2535,14 +2570,14 @@ Phishing is like an umbrella, and these are the flavors:
 
 ---
 
-#### 2️⃣ Pretexting
+#### 5️⃣ Pretexting
 
 - Creating a **fake scenario/story** to trick you.
 - Example: Hacker pretends to be IT support asking for your login.
 
 ---
 
-#### 3️⃣ Baiting
+#### 6️⃣ Baiting
 
 - Offering something tempting.
 - Example: “Free movie download” → but it’s malware.
@@ -2550,21 +2585,21 @@ Phishing is like an umbrella, and these are the flavors:
 
 ---
 
-#### 4️⃣ Tailgating / Piggybacking
+#### 7️⃣ Tailgating / Piggybacking
 
 - Physically following someone into a restricted area.
 - Example: Hacker waits at the door, says “Hey, I forgot my ID, can you hold the door?”
 
 ---
 
-#### 5️⃣ Quid Pro Quo
+#### 8️⃣ Quid Pro Quo
 
 - Exchange of favors.
 - Example: “I’ll fix your printer if you give me your login.”
 
 ---
 
-#### 6️⃣ Impersonation
+#### 9️⃣ Impersonation
 
 - Hacker pretends to be someone with authority.
 - Example: Acting as CEO and emailing the finance team to release funds.
@@ -2574,9 +2609,8 @@ Phishing is like an umbrella, and these are the flavors:
 ⚡ **Mnemonic:**
 **PPT BQI** (like a “PowerPoint BQI file”)
 
-- **P**hishing
 - **P**retexting
-- **T**ailgating
+- **P**iggybacking/**T**ailgating
 - **B**aiting
 - **Q**uid Pro Quo
 - **I**mpersonation
@@ -2667,8 +2701,7 @@ Think of it like **“The 4D Shield”**:
    - MFA, strong authentication.
    - Zero-trust model (“never trust, always verify”).
 
-💡 **Mnemonic: ABP India**
-Access, Behavior, Policies, Identity.
+💡 **Mnemonic: ABP India** *→ **A**ccess, **B**ehavior, **P**olicies, **I**dentity.***
 
 ---
 
@@ -2693,7 +2726,7 @@ In a nutshell, types of people that works in a company: newbie 👶, finance (sa
 - **Strong Policies** → no sensitive info shared over mail/phone.
 - **Incident Reporting** → encourage reporting suspicious messages (no shame in asking!).
 
-#### Mnemonics for **Defence Strategies**
+#### Mnemonics for **Defence Strategies** (Pick any one and learn it)
 
 - Mnemonic 1: **AVSSI**
   - **A**wareness
@@ -2704,21 +2737,21 @@ In a nutshell, types of people that works in a company: newbie 👶, finance (sa
 
 - Mnemonic 2: **VCAT PAIR 🐱**
 
-  - Verification Culture
-  - Awareness
-  - Training
-  - Policies
-  - Attacks
-  - Incident reporting.
+  - **V**erification **C**ulture
+  - **A**wareness
+  - **T**raining
+  - **P**olicies
+  - **A**ttacks
+  - **I**ncident **R**eporting.
 
-- Bonus: **A TSP in CAR 🚗** → Awareness, Training, Security Policies, Culture, Awareness, Reporting.
+- Bonus: **A TSP in CAR 🚗** *→ **A**wareness **T**raining, **S**ecurity **P**olicies, **C**ulture, **A**wareness, **R**eporting.*
 
 ---
 
 ### 🛡️ 16. OWASP Top 10
 
 **What it is:**
-The **OWASP Top 10** is a standard awareness document for developers and web application security. It represents a broad consensus about the **most critical security risks to web applications**. Think of it as a "Most Wanted" list for web vulnerabilities.
+The **OWASP Top 10** is a standard awareness document for developers and web application security. It represents a broad consensus (agreement) about the **most critical security risks to web applications**. Think of it as a "Most Wanted" list for web vulnerabilities.
 
 It's created by the **Open Web Application Security Project (OWASP)**, a non-profit foundation that works to improve software security.
 
@@ -2769,7 +2802,19 @@ Here are the ten categories. You don't need to be an expert on each, but you sho
     - **What it is:** Tricking a server into making requests to an internal or third-party system that it shouldn't be able to access. It's like using a trusted employee to sneak into a restricted area.
     - **Simple Fix:** Sanitize and validate all user input, especially URLs.
 
-**Exam Tip:** You don't need to memorize all ten in order, but be familiar with the names, especially **Injection**, **Broken Access Control**, and **Cryptographic Failures**.
+**Exam Tips:**
+
+1. Don't worry if you're struggling to memorize them. Don't memorize the exact words. Memorize the important ones: **Injection**, **Broken Access Control**, and **Cryptographic Failures**.
+
+2. Now if you want to memorize more you can create mind maps. Let's recall **Information Assurance (IA)** where we studied **NRACIA**. You can see few topics linked to it i.e. **Identification and Authentication Failures** and **Software and Data Integrity Failures**.
+
+3. **Forgery** is a crime we are daily aware of. Illegal foreign immigrants from other countries forcefully penetrate the border and create fake passports and identity cards. You can see **Server Side Request Forgery** linked to it.
+
+4. Everyone starts to fall behind with an old mindset. We must keep ourselves upto date with the real world. Similary **components can become outdated and vulnerable**.
+
+5. Last is **Sequrity Misconfiguration** and **Insecure Design**, think of **IDS/IPS** and **Software Engineering**.
+
+There you go my studious friend. Ace your exams 💪.
 
 ---
 
@@ -2780,7 +2825,9 @@ Here are the ten categories. You don't need to be an expert on each, but you sho
 **What it is:**
 The scientific process of **identifying, preserving, collecting, examining, analyzing, and presenting** digital evidence so it’s **legally admissible**.
 
-**Remember the mnemonic?**
+💡 *Just get an overview, even if you forget goals & principles you can make it up by using the mnemonic.*
+
+**Remember the mnemonic?**  
 *Ident preserves CD collections while examine analyzes presentations*
 
 🎯 **Goals (mnemonic: P.I.E.R.)**
@@ -3297,10 +3344,10 @@ Think of it as a **rulebook + framework** 📘 for securing information.
 
 #### 🔥 Solutions
 
-1️⃣ **b) ISMS**
-2️⃣ **b) Confidentiality, Integrity, Availability** (CIA).
-3️⃣ **b) Independent third-party auditor**
-4️⃣ **b) Leadership**
+1️⃣ **b) ISMS**  
+2️⃣ **b) Confidentiality, Integrity, Availability** (CIA).  
+3️⃣ **b) Independent third-party auditor**  
+4️⃣ **b) Leadership**  
 5️⃣ **a) 114**
 
 ---
